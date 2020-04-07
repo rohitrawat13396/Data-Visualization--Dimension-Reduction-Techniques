@@ -1,0 +1,32 @@
+<head>
+
+</head>
+<body>
+  <h1 align ="center" style="background-color: rgba(99, 102, 238, 0.479);">Data Visualization: Mini Project 2</h1>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+
+  <div class ="dropdown" align ="center">
+    <span> Tasks: </span> 
+    <select id="selectButton" class="btn btn-default"></select>
+    <span style="margin-right: -150;" align ="end">
+      <span class="dot" style="  margin-bottom: -5; height: 20px;    width: 20px;    background-color:red;    border-radius: 50%;    display: inline-block;">
+      </span>
+      <span><b>: Original Data</b></span>
+      <span class="dot" style="  margin-bottom: -5; height: 20px;    width: 20px;    background-color:green;    border-radius: 50%;    display: inline-block;">
+      </span>
+      <span><b>: Random Sampled Data</b></span>
+      <span class="dot" style="  margin-bottom: -5; height: 20px;    width: 20px;    background-color:orange;    border-radius: 50%;    display: inline-block;">
+      </span>
+      <span><b>: Stratified Sampled Data</b></span>
+    </span>
+  </div>
+
+  <div id="Content" align ="center" style="margin-top: 30;">
+    <script src="{{url_for('static', filename='task3_drawScatterPlotMatrix.js')}}"></script>
+    <script src="{{url_for('static', filename='task3_drawScatterPlot.js')}}"></script>
+    <script src="{{url_for('static', filename='task2_getbarchart.js')}}"></script>
+    <script src="{{url_for('static', filename='getdataFromPython.js')}}"></script>
+    <script src="{{url_for('static', filename='main.js')}}"></script>
+  </div>
+</body>
